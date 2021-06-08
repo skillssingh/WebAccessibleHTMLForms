@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title>Login Form | Web Accessible</title>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css" integrity="sha512-shT5e46zNSD6lt4dlJHb+7LoUko9QZXTGlmWWx0qjI9UhQrElRb+Q5DM7SVte9G9ZNmovz2qIaV7IWv0xQkBkw==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="../css/base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../js/index.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+    <div role="main" class="row">
+        <div class="pageDiv">
+            <div class="col-xs-12 col-sm-8">
+                <form>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <h1>Log In Page</h1>
+                                <label class="text-right isRequired control-label">* Is Required</label>
+                                
+                                <!-- Error messages section -->
+                                <div class="error displayNone errorDiv" role="alert">
+                                    <ul>
+                                    </ul>
+                                </div>
+                                
+                                <label for="txtUserName">
+                                    Username
+                                    <span class="isRequired">
+                                        <span aria-hidden="true">*</span>
+                                        <span class="sr-only">is a required field</span>
+                                    </span>
+                                </label>
+                                <input type="text" class="form-control" id="txtUserName" placeholder="E.g. John">
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label for="txtPassword">Password
+                                    <span class="isRequired">
+                                        <span aria-hidden="true">*</span>
+                                        <span class="sr-only">is a required field</span></span>
+                                </label>
+                                <input type="password" class="form-control" id="txtPassword">
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group text-center">
+                                <button type="button" class="btn btnPrimary form-control"
+                                        id="btnLogIn">
+                                    Log In
+                                </button>
+                                <hr/>
+                                <a href="#">Forgot Username or Password?</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+    </div>
+</body>
+</html>
